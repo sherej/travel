@@ -1,0 +1,16 @@
+server:
+  port: 8090
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db_travel_market
+    username: postgres
+    password: 123
+
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: create
+    show-sql: true
