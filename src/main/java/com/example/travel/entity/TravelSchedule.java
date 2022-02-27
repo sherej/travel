@@ -1,10 +1,13 @@
 package com.example.travel.entity;
 
+import com.example.travel.common.BaseEntity;
+import org.springframework.beans.factory.annotation.Qualifier;
+
 import javax.persistence.*;
 import java.util.Date;
 
 @Entity(name = "travel_schedules")
-public class TravelSchedule extends BaseEntity{
+public class TravelSchedule extends BaseEntity {
 //    @Id
 //    @GeneratedValue(strategy = GenerationType.IDENTITY)
 //    private Long id;

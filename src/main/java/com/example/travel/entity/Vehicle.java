@@ -1,5 +1,7 @@
 package com.example.travel.entity;
 
+import com.example.travel.common.BaseEntity;
+
 import javax.persistence.*;
 
 //@Entity
@@ -9,7 +11,7 @@ import javax.persistence.*;
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name="vehicle_type",
         discriminatorType = DiscriminatorType.STRING)
-public class Vehicle extends BaseEntity{
+public class Vehicle extends BaseEntity {
 //    @Id
 //    @GeneratedValue(strategy = GenerationType.IDENTITY)
 //    private Long id;

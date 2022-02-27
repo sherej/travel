@@ -1,11 +1,12 @@
 package com.example.travel.entity;
 
-import com.example.travel.entity.enums.VehicleType;
+import com.example.travel.common.BaseEntity;
+import com.example.travel.common.enums.VehicleType;
 
 import javax.persistence.*;
 
 @Entity(name="terminals")
-public class Terminal extends BaseEntity{
+public class Terminal extends BaseEntity {
 //    @Id
 //    @GeneratedValue(strategy = GenerationType.IDENTITY)
 //    private Long id;

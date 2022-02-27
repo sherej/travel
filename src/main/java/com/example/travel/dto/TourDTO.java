@@ -1,27 +1,19 @@
 package com.example.travel.dto;
 
 import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-public class TourDTO extends BaseDTO {
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+public class TourDTO {
     @ApiModelProperty(required = true)
     private CompanyDTO organizer;
 
     @ApiModelProperty(required = true)
     private CityDTO city;
 
-    public CompanyDTO getOrganizer() {
-        return organizer;
-    }
 
-    public void setOrganizer(CompanyDTO organizer) {
-        this.organizer = organizer;
-    }
-
-    public CityDTO getCity() {
-        return city;
-    }
-
-    public void setCity(CityDTO city) {
-        this.city = city;
-    }
 }

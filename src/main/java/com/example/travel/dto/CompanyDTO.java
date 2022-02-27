@@ -1,9 +1,15 @@
 package com.example.travel.dto;
 
-import com.example.travel.entity.enums.CompanyType;
+import com.example.travel.common.enums.CompanyType;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-public class CompanyDTO extends BaseDTO {
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+public class CompanyDTO  {//extends BaseDTO
 
     @ApiModelProperty(required = true)
     private String name;
@@ -14,35 +20,4 @@ public class CompanyDTO extends BaseDTO {
     @ApiModelProperty(required = true)
     private String address;
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public CompanyType getType() {
-        return type;
-    }
-
-    public void setType(CompanyType type) {
-        this.type = type;
-    }
-
-    public CityDTO getCity() {
-        return city;
-    }
-
-    public void setCity(CityDTO city) {
-        this.city = city;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
 }

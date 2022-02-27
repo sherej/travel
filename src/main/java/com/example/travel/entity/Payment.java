@@ -1,13 +1,14 @@
 package com.example.travel.entity;
 
-import com.example.travel.entity.enums.PaymentStatus;
+import com.example.travel.common.BaseEntity;
+import com.example.travel.common.enums.PaymentStatus;
 
 import javax.persistence.*;
 import java.util.Date;
 
 
 @Entity(name="payments")
-public class Payment extends BaseEntity{
+public class Payment extends BaseEntity {
 //    @Id
 //    @GeneratedValue(strategy = GenerationType.IDENTITY)
 //    private Long id;

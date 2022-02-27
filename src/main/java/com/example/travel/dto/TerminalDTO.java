@@ -1,10 +1,15 @@
 package com.example.travel.dto;
 
-import com.example.travel.entity.enums.VehicleType;
+import com.example.travel.common.enums.VehicleType;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-
-public class TerminalDTO extends BaseDTO {
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+public class TerminalDTO  {
 
     @ApiModelProperty(required = true)
     private String name;

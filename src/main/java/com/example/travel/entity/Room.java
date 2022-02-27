@@ -1,12 +1,12 @@
 package com.example.travel.entity;
 
-import com.example.travel.entity.enums.BedCount;
-import com.example.travel.entity.enums.CompanyType;
+import com.example.travel.common.BaseEntity;
+import com.example.travel.common.enums.BedCount;
 
 import javax.persistence.*;
 
 @Entity(name="rooms")
-public class Room extends BaseEntity{
+public class Room extends BaseEntity {
 //    @Id
 //    @GeneratedValue(strategy = GenerationType.IDENTITY)
 //    private Long id;

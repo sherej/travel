@@ -1,15 +1,17 @@
 package com.example.travel.entity;
 
+import com.example.travel.common.BaseEntity;
+
 import javax.persistence.*;
 
 @Entity(name = "tickets")
-public class Ticket extends BaseEntity{
+public class Ticket extends BaseEntity {
 //    @Id
 //    @GeneratedValue(strategy = GenerationType.IDENTITY)
 //    private Long id;
 
     @ManyToOne
-    private TravelSchedule travelInformation;
+    private TravelSchedule travelSchedule;
 
     private String seat;
 
@@ -27,12 +29,12 @@ public class Ticket extends BaseEntity{
 //        this.id = id;
 //    }
 
-    public TravelSchedule getTravelInformation() {
-        return travelInformation;
+    public TravelSchedule getTravelSchedule() {
+        return travelSchedule;
     }
 
-    public void setTravelInformation(TravelSchedule travelInformation) {
-        this.travelInformation = travelInformation;
+    public void setTravelSchedule(TravelSchedule travelSchedule) {
+        this.travelSchedule = travelSchedule;
     }
 
     public String getSeat() {

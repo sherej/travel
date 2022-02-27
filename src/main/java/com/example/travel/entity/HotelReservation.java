@@ -1,11 +1,12 @@
 package com.example.travel.entity;
 
+import com.example.travel.common.BaseEntity;
+
 import javax.persistence.*;
 import java.util.Date;
-import java.util.List;
 
 @Entity(name="reservations")
-public class HotelReservation extends BaseEntity{
+public class HotelReservation extends BaseEntity {
 //    @Id
 //    @GeneratedValue(strategy = GenerationType.IDENTITY)
 //    private Long id;

@@ -1,10 +1,12 @@
 package com.example.travel.entity;
 
+import com.example.travel.common.BaseEntity;
+
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 
 @Entity(name="reservations_rooms")
-public class ReservationRoom extends BaseEntity{
+public class ReservationRoom extends BaseEntity {
 
     @ManyToOne
     private HotelReservation hotelReservation;

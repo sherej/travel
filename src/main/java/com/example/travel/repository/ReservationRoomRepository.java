@@ -1,5 +1,6 @@
 package com.example.travel.repository;
 
+import com.example.travel.common.BaseRepository;
 import com.example.travel.entity.HotelReservation;
 import com.example.travel.entity.Passenger;
 import com.example.travel.entity.ReservationRoom;
@@ -10,6 +11,6 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface ReservationRoomRepository extends PagingAndSortingRepository<ReservationRoom,Long>{
-    List<ReservationRoom> findAllByHotelReservationAndRoom(HotelReservation hotelReservation, Room room);
+public interface ReservationRoomRepository extends BaseRepository<ReservationRoom,Long> {
+//    List<ReservationRoom> findAllByHotelReservationAndRoom(HotelReservation hotelReservation, Room room);
 }

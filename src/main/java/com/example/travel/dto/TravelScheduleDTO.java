@@ -1,9 +1,16 @@
 package com.example.travel.dto;
 
 import io.swagger.annotations.ApiModelProperty;
-import java.util.Date;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.mapstruct.Qualifier;
 
-public class TravelScheduleDTO extends BaseDTO {
+import java.util.Date;
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+public class TravelScheduleDTO  {
 
     @ApiModelProperty(required = true)
     private VehicleDTO vehicle;
@@ -17,35 +24,5 @@ public class TravelScheduleDTO extends BaseDTO {
     @ApiModelProperty(required = true)
     private Date departureTime;
 
-    public VehicleDTO getVehicle() {
-        return vehicle;
-    }
 
-    public void setVehicle(VehicleDTO vehicle) {
-        this.vehicle = vehicle;
-    }
-
-    public TerminalDTO getSource() {
-        return source;
-    }
-
-    public void setSource(TerminalDTO source) {
-        this.source = source;
-    }
-
-    public TerminalDTO getDestination() {
-        return destination;
-    }
-
-    public void setDestination(TerminalDTO destination) {
-        this.destination = destination;
-    }
-
-    public Date getDepartureTime() {
-        return departureTime;
-    }
-
-    public void setDepartureTime(Date departureTime) {
-        this.departureTime = departureTime;
-    }
 }

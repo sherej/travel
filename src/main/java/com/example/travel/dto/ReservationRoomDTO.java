@@ -1,26 +1,18 @@
 package com.example.travel.dto;
 
 import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-public class ReservationRoomDTO extends BaseDTO {
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+public class ReservationRoomDTO  {
     @ApiModelProperty(required = true)
     private HotelReservationDTO hotelReservation;
     @ApiModelProperty(required = true)
     private RoomDTO room;
 
-    public HotelReservationDTO getHotelReservation() {
-        return hotelReservation;
-    }
 
-    public void setHotelReservation(HotelReservationDTO hotelReservation) {
-        this.hotelReservation = hotelReservation;
-    }
-
-    public RoomDTO getRoom() {
-        return room;
-    }
-
-    public void setRoom(RoomDTO room) {
-        this.room = room;
-    }
 }

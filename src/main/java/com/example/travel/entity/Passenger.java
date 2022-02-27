@@ -1,10 +1,6 @@
 package com.example.travel.entity;
 
-import com.example.travel.entity.enums.Gender;
-
 import javax.persistence.*;
-import javax.validation.constraints.Size;
-import java.util.Date;
 
 
 @Entity(name="passengers")

@@ -1,9 +1,11 @@
 package com.example.travel.entity;
 
+import com.example.travel.common.BaseEntity;
+
 import javax.persistence.*;
 
 @Entity(name="tours")
-public class Tour extends BaseEntity{
+public class Tour extends BaseEntity {
 
 //    @Id
 //    @GeneratedValue(strategy = GenerationType.IDENTITY)

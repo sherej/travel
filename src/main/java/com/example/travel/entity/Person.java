@@ -1,13 +1,14 @@
 package com.example.travel.entity;
 
-import com.example.travel.entity.enums.Gender;
+import com.example.travel.common.BaseEntity;
+import com.example.travel.common.enums.Gender;
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;
 import java.util.Date;
 
 @MappedSuperclass
-public class Person extends BaseEntity{
+public class Person extends BaseEntity {
 
     @Column(nullable = false)
     private String firstName;

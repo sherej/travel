@@ -1,10 +1,12 @@
 package com.example.travel.entity;
 
+import com.example.travel.common.BaseEntity;
+
 import javax.persistence.*;
 import javax.validation.constraints.Size;
 
 @Entity(name="hotels")
-public class Hotel extends BaseEntity{
+public class Hotel extends BaseEntity {
 //    @Id
 //    @GeneratedValue(strategy = GenerationType.IDENTITY)
 //    private Long id;
